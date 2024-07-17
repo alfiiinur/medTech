@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Jobhub - Job Board HTML Website Template</title>
+    <title>Homepage-MedTech</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,10 +12,29 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/medetc.png" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="assets/css/main.css?v=1.0" />
+    <style>
+       .curved-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 40px; /* Atur jarak antara teks dan garis */
+}
+
+.curved-underline svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    pointer-events: none;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
 </head>
 
 <body>
@@ -39,68 +58,20 @@
                     <div class="header-nav">
                         <nav class="nav-main-menu d-none d-xl-block">
                             <ul class="main-menu">
-                                <li class="has-children">
-                                    <a class="active" href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a class="active" href="index.html">Home </a>
                                 </li>
-                                <li class="has-children">
-                                    <a href="job-grid.html">Browse Jobs</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="job-grid.html">Job Grid</a></li>
-                                        <li><a href="job-grid-2.html">Job Grid 2</a></li>
-                                        <li><a href="job-list.html">Job List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="job-single.html">Job Single 01</a></li>
-                                        <li><a href="job-single-2.html">Job Single 02</a></li>
-                                        <li><a href="job-single-3.html">Job Single 03</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a href="port.html">Portofolio</a>
                                 </li>
-                                <li class="has-children">
-                                    <a href="employers-grid.html">Employers</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="employers-grid.html">Employers Grid</a></li>
-                                        <li><a href="employers-grid-2.html">Employers Grid 2</a></li>
-                                        <li><a href="employers-list.html">Employers List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="employers-single.html">Employers Single 01</a></li>
-                                        <li><a href="employers-single-2.html">Employers Single 02</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a href="our-serv.html">Our Services</a>
                                 </li>
-                                <li class="has-children">
-                                    <a href="candidates-grid.html">Candidates</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="candidates-grid.html">Candidates Grid</a></li>
-                                        <li><a href="candidates-grid-2.html">Candidates Grid 2</a></li>
-                                        <li><a href="candidates-list.html">Candidates List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="candidates-single.html">Candidates Single 01</a></li>
-                                        <li><a href="candidates-single-2.html">Candidates Single 02</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a href="pric-plan.html">Pricing Plan</a>
                                 </li>
-                                <li class="has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-grid-2.html">Blog Grid Sidebar</a></li>
-                                        <li><a href="blog-list.html">Blog List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="blog-single.html">Blog Single 01</a></li>
-                                        <li><a href="blog-single-2.html">Blog Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="page-about.html">About Us</a></li>
-                                        <li><a href="page-service.html">Our Services</a></li>
-                                        <li><a href="page-pricing.html">Pricing Plan</a></li>
-                                        <li><a href="pages-faqs.html">FAQs</a></li>
-                                        <li><a href="page-contact.html">Contact Us</a></li>
-                                    </ul>
+                                <li class="">
+                                    <a href="about-us.html">About Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -118,13 +89,6 @@
     <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
-                <div class="user-account">
-                    <img src="assets/imgs/avatar/ava_1.png" alt="jobhub" />
-                    <div class="content">
-                        <h6 class="user-name">Howdy, <span class="text-brand">AliThemes</span></h6>
-                        <p class="font-xs text-muted">You have 2 new messages</p>
-                    </div>
-                </div>
                 <div class="burger-icon burger-icon-white">
                     <span class="burger-icon-top"></span>
                     <span class="burger-icon-mid"></span>
@@ -132,105 +96,30 @@
                 </div>
             </div>
             <div class="mobile-header-content-area">
-                <div class="perfect-scroll">
-                    <div class="mobile-search mobile-header-border mb-30">
-                        <form action="#">
-                            <input type="text" placeholder="Search for items…" />
-                            <i class="fi-rr-search"></i>
-                        </form>
-                    </div>
+                <div class="">
                     <div class="mobile-menu-wrap mobile-header-border">
                         <!-- mobile menu start -->
                         <nav>
                             <ul class="mobile-menu font-heading">
-                                <li class="has-children">
-                                    <a class="active" href="index.html">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="job-grid.html">Browse Jobs</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="job-grid.html">Job Grid</a></li>
-                                        <li><a href="job-grid-2.html">Job Grid 2</a></li>
-                                        <li><a href="job-list.html">Job List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="job-single.html">Job Single 01</a></li>
-                                        <li><a href="job-single-2.html">Job Single 02</a></li>
-                                        <li><a href="job-single-3.html">Job Single 03</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="employers-grid.html">Employers</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="employers-grid.html">Employers Grid</a></li>
-                                        <li><a href="employers-grid-2.html">Employers Grid 2</a></li>
-                                        <li><a href="employers-list.html">Employers List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="employers-single.html">Employers Single 01</a></li>
-                                        <li><a href="employers-single-2.html">Employers Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="candidates-grid.html">Candidates</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="candidates-grid.html">Candidates Grid</a></li>
-                                        <li><a href="candidates-grid-2.html">Candidates Grid 2</a></li>
-                                        <li><a href="candidates-list.html">Candidates List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="candidates-single.html">Candidates Single 01</a></li>
-                                        <li><a href="candidates-single-2.html">Candidates Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                        <li><a href="blog-grid-2.html">Blog Grid Sidebar</a></li>
-                                        <li><a href="blog-list.html">Blog List</a></li>
-                                        <li class="hr"><span></span></li>
-                                        <li><a href="blog-single.html">Blog Single 01</a></li>
-                                        <li><a href="blog-single-2.html">Blog Single 02</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="page-about.html">About Us</a></li>
-                                        <li><a href="page-service.html">Our Services</a></li>
-                                        <li><a href="page-pricing.html">Pricing Plan</a></li>
-                                        <li><a href="pages-faqs.html">FAQs</a></li>
-                                        <li><a href="page-contact.html">Contact Us</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                    <li class="">
+                                        <a class="active" href="index.html">Home </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="port.html">Portofolio</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="our-serv.html">Our Services</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="pric-plan.html">Pricing Plan</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                </ul>
                         </nav>
                         <!-- mobile menu end -->
                     </div>
-                    <div class="mobile-account">
-                        <h6 class="mb-10">Your Account</h6>
-                        <ul class="mobile-menu font-heading">
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Work Preferences</a></li>
-                            <li><a href="#">My Boosted Shots</a></li>
-                            <li><a href="#">My Collections</a></li>
-                            <li><a href="#">Account Settings</a></li>
-                            <li><a href="#">Go Pro</a></li>
-                            <li><a href="#">Sign Out</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-social-icon mb-50">
-                        <h6 class="mb-25">Follow Us</h6>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt="jobhub" /></a>
-                    </div>
-                    <div class="site-copyright">Copyright 2022 © JobHub. <br />Designed by AliThemes.</div>
                 </div>
             </div>
         </div>
@@ -238,26 +127,26 @@
     <!--End header-->
     <!-- Content -->
     <main class="main">
-        <section class="section-box">
-            <div class="banner-hero hero-1">
+        <section class="section-box bg-banner-about banner-home-3 pt-100">
+            <div class="banner-hero">
                 <div class="banner-inner">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-12">
                             <div class="block-banner">
-                                <span class="text-small-primary text-small-primary--disk text-uppercase wow animate__animated animate__fadeInUp">Best Digital Solustions</span>
-                                <h1 class="heading-banner wow animate__animated animate__fadeInUp">MedTech: Solutions to All Your Digital Problems</h1>
-                                <div class="banner-description mt-30 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Each month, more than 3 million job seekers turn to website in their search for work, making over 140,000 applications every single day</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="banner-imgs">
-                                <img alt="jobhub" src="assets/imgs/banner/banner.png" class="img-responsive shape-1" />
-                                <span class="union-icon"><img alt="jobhub" src="assets/imgs/banner/union.svg" class="img-responsive shape-3" /></span>
-                                <span class="congratulation-icon"><img alt="jobhub" src="assets/imgs/banner/congratulation.svg" class="img-responsive shape-2" /></span>
-                                <span class="docs-icon"><img alt="jobhub" src="assets/imgs/banner/docs.svg" class="img-responsive shape-2" /></span>
-                                <span class="course-icon"><img alt="jobhub" src="assets/imgs/banner/course.svg" class="img-responsive shape-3" /></span>
-                                <span class="web-dev-icon"><img alt="jobhub" src="assets/imgs/banner/web-dev.svg" class="img-responsive shape-3" /></span>
-                                <span class="tick-icon"><img alt="jobhub" src="assets/imgs/banner/tick.svg" class="img-responsive shape-3" /></span>
+                                <h1 class="heading-banner text-center wow animate__animated animate__fadeInUp ">
+                                    Meduro Technology: <br> Solutions to All Your Digital Problems 
+                                    <span class="curved-underline text-primary">
+                                        <span id="typed"></span>
+                                        <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                                            <path d="M0 20 Q 50 0, 100 20" stroke="black" stroke-width="2" fill="none"/>
+                                        </svg>
+                                    </span>
+                                </h1>
+                                
+                                <div class="list-tags-banner mt-60 text-center wow animate__animated animate__fadeInUp">
+                                    <strong>Popular Searches:</strong>
+                                    <a href="#">Designer</a>, <a href="#">Developer</a>, <a href="#">Web</a>, <a href="#">Engineer</a>, <a href="#">Senior</a>,
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,22 +159,22 @@
                     <div class="swiper-container swiper-group-6">
                         <div class="swiper-wrapper pb-70 pt-5">
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/google.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/google.svg" /></a></div>
                             </div>
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/airbnb.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/airbnb.svg" /></a></div>
                             </div>
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/dropbox.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/dropbox.svg" /></a></div>
                             </div>
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/fedex.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/fedex.svg" /></a></div>
                             </div>
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/wallmart.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/wallmart.svg" /></a></div>
                             </div>
                             <div class="swiper-slide hover-up">
-                                <div class="item-logo"><a href="candidates-single.html"><img alt="jobhub" src="assets/imgs/slider/logo/hubspot.svg" /></a></div>
+                                <div class="item-logo"><a href="#"><img alt="jobhub" src="assets/imgs/slider/logo/hubspot.svg" /></a></div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +187,7 @@
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7">
-                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp">Browse by category</h2>
+                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp">Catalog Product MedTech</h2>
                         <p class="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp">Find the type of work
                             you need, clearly defined and ready to start. Work begins as soon as you purchase and provide
                             requirements.</p>
@@ -311,11 +200,11 @@
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img alt="jobhub" src="assets/imgs/theme/icons/marketing.svg" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Marketing & Communication</a>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Marketing & Communication</a>
                             </h5>
                             <p class="text-center text-stroke-40 mt-20">156 Available Vacancy</p>
                         </div>
@@ -323,79 +212,78 @@
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img alt="jobhub" src="assets/imgs/theme/icons/content-writer.svg" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Content <br>Writer</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Website <br>Development</a></h5>
                             <p class="text-center text-stroke-40 mt-20">268 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         <div class="card-grid hover-up">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img src="assets/imgs/theme/icons/marketing-director.svg" alt="jobhub" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Marketing <br>Director</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Marketing <br>Director</a></h5>
                             <p class="text-center text-stroke-40 mt-20">145 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img src="assets/imgs/theme/icons/system-analyst.svg" alt="jobhub" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">System <br>Analyst</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">System <br>Analyst</a></h5>
                             <p class="text-center text-stroke-40 mt-20">236 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img src="assets/imgs/theme/icons/business-development.svg" alt="jobhub" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Digital<br> Designer</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Digital<br> Designer</a></h5>
                             <p class="text-center text-stroke-40 mt-20">56 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <div class="text-center">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure><img src="assets/imgs/theme/icons/proof-reading.svg" alt="jobhub" /></figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Market <br>Research</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Market <br>Research</a></h5>
                             <p class="text-center text-stroke-40 mt-20">168 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                             <div class="text-center card-img">
-                                <a href="job-grid.html">
+                                <a href="product.html">
                                     <figure>
                                         <img src="assets/imgs/theme/icons/testing.svg" alt="jobhub" />
                                     </figure>
                                 </a>
                             </div>
-                            <h5 class="text-center mt-20 card-heading"><a href="job-grid.html">Human<br> Resource</a></h5>
+                            <h5 class="text-center mt-20 card-heading"><a href="product.html">Human<br> Resource</a></h5>
                             <p class="text-center text-stroke-40 mt-20">628 Available Vacancy</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card-grid hover-up wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <div class="text-center mt-15">
-                                <h3>18,265+</h3>
+                                <h3>Other Product <span class="text-primary">MedTech</span>  </h3>
                             </div>
-                            <p class="text-center mt-30 text-stroke-40">Jobs are waiting for you</p>
                             <div class="text-center mt-30">
-                                <div class="box-button-shadow"><a href="job-grid.html" class="btn btn-default">Explore more</a></div>
+                                <div class="box-button-shadow"><a href="product.html" class="btn btn-default">Explore more</a></div>
                             </div>
                         </div>
                     </div>
@@ -406,18 +294,18 @@
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-4">
-                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp">Recent Jobs</h2>
+                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp">Portofolio MedTech</h2>
                         <p class="text-md-lh28 color-black-5wow animate__animated animate__fadeInUp" data-wow-delay=".1s">8 new
                             opportunities posted today!</p>
                     </div>
                     <div class="col-lg-8 text-xl-end text-start">
                         <ul class="nav nav-right float-xl-end float-start" role="tablist">
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".1s"><button id="nav-tab-one-1" data-bs-toggle="tab" data-bs-target="#tab-one-1" type="button" role="tab" aria-controls="tab-one-1" aria-selected="true" class="active">Design</button></li>
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".2s"><button id="nav-tab-two-1" data-bs-toggle="tab" data-bs-target="#tab-two-1" type="button" role="tab" aria-controls="tab-two-1" aria-selected="false">Marketing</button></li>
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".3s"><button id="nav-tab-three-1" data-bs-toggle="tab" data-bs-target="#tab-three-1" type="button" role="tab" aria-controls="tab-three-1" aria-selected="false">Design</button></li>
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".4s"><button id="nav-tab-four-1" data-bs-toggle="tab" data-bs-target="#tab-four-1" type="button" role="tab" aria-controls="tab-four-1" aria-selected="false">Service</button></li>
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".5s"><button id="nav-tab-five-1" data-bs-toggle="tab" data-bs-target="#tab-five-1" type="button" role="tab" aria-controls="tab-five-1" aria-selected="false">Health Care</button></li>
-                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".6s"><button id="nav-tab-six-1" data-bs-toggle="tab" data-bs-target="#tab-six-1" type="button" role="tab" aria-controls="tab-six-1" aria-selected="false">Writing</button></li>
+                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".1s"><button id="nav-tab-one-1" data-bs-toggle="tab" data-bs-target="#tab-one-1" type="button" role="tab" aria-controls="tab-one-1" aria-selected="true" class="active">Website</button></li>
+                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".2s"><button id="nav-tab-two-1" data-bs-toggle="tab" data-bs-target="#tab-two-1" type="button" role="tab" aria-controls="tab-two-1" aria-selected="false">Desain</button></li>
+                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".3s"><button id="nav-tab-three-1" data-bs-toggle="tab" data-bs-target="#tab-three-1" type="button" role="tab" aria-controls="tab-three-1" aria-selected="false">Vidio</button></li>
+                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".4s"><button id="nav-tab-four-1" data-bs-toggle="tab" data-bs-target="#tab-four-1" type="button" role="tab" aria-controls="tab-four-1" aria-selected="false">UI/UX</button></li>
+                            <!-- <li class="wow animate__animated animate__fadeIn" data-wow-delay=".5s"><button id="nav-tab-five-1" data-bs-toggle="tab" data-bs-target="#tab-five-1" type="button" role="tab" aria-controls="tab-five-1" aria-selected="false">Cloud</button></li>
+                            <li class="wow animate__animated animate__fadeIn" data-wow-delay=".6s"><button id="nav-tab-six-1" data-bs-toggle="tab" data-bs-target="#tab-six-1" type="button" role="tab" aria-controls="tab-six-1" aria-selected="false">3D Modelling</button></li> -->
                         </ul>
                     </div>
                 </div>
@@ -428,7 +316,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-1.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -441,18 +329,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Website 1</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $3200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -466,7 +354,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-2.png" alt="jobhub" /></figure>
                                             </a>
                                         </div>
@@ -478,18 +366,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Website 2n</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -503,7 +391,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-3.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -516,18 +404,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Website 3</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -541,7 +429,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-4.png" alt="jobhub" /></figure>
                                             </a>
                                         </div>
@@ -553,18 +441,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Website 4</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood</span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -578,7 +466,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-5.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -591,18 +479,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Website 5</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood</span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -616,37 +504,17 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-6.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
                                         </div>
                                         <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-7 col-6">
-                                                    <a href="employers-single.html" class="card-2-img-text">
-                                                        <span class="card-grid-2-img-small"><img src="assets/imgs/jobs/logos/logo-6.svg" alt="jobhub" /></span> <span>Louis Vuitton</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
-                                                </div>
+                                            <div class="text-center mt-15">
+                                                <h3>Other Website <span class="text-primary">MedTech</span>  </h3>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media business pages setup</a></h5>
-                                            <div class="mt-15">
-                                                <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
-                                            </div>
-                                            <div class="card-2-bottom mt-30">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
-                                                    </div>
-                                                    <div class="col-lg-5 col-4 text-end">
-                                                        <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
-                                                        <span class="ml-5"><img src="assets/imgs/theme/icons/bookmark.svg" alt="jobhub" /></span>
-                                                    </div>
-                                                </div>
+                                            <div class="text-center mt-30">
+                                                <div class="box-button-shadow"><a href="product.html" class="btn btn-default">Explore more</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -671,18 +539,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Desain</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Desain 1</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">35 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $4200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img src="assets/imgs/theme/icons/shield-check.svg" alt="jobhub" /></span>
@@ -696,7 +564,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img src="assets/imgs/jobs/job-8.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -709,18 +577,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Desain</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Desain 2</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -734,7 +602,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-9.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -747,18 +615,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Desain</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Desain 3</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -772,7 +640,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-10.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -785,18 +653,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Desain</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Desain 4</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood</span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -810,7 +678,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-1.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -823,18 +691,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Desain</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Desain 5</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood</span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -848,37 +716,17 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/jobs/job-2.png" /></figure>
+                                            <a href="port.html">
+                                                <figure><img src="assets/imgs/jobs/job-6.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
                                         </div>
                                         <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-7 col-6">
-                                                    <a href="employers-single.html" class="card-2-img-text">
-                                                        <span class="card-grid-2-img-small"><img alt="jobhub" src="assets/imgs/jobs/logos/logo-6.svg" /></span> <span>Alithemes</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
-                                                </div>
+                                            <div class="text-center mt-15">
+                                                <h3>Other Desain <span class="text-primary">MedTech</span>  </h3>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media pages setup for your business.</a></h5>
-                                            <div class="mt-15">
-                                                <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
-                                            </div>
-                                            <div class="card-2-bottom mt-30">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
-                                                    </div>
-                                                    <div class="col-lg-5 col-4 text-end">
-                                                        <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
-                                                        <span class="ml-5"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></span>
-                                                    </div>
-                                                </div>
+                                            <div class="text-center mt-30">
+                                                <div class="box-button-shadow"><a href="product.html" class="btn btn-default">Explore more</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -890,7 +738,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-1.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -903,18 +751,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Vidio</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Vidio 1</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">39 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $5200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -928,7 +776,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-2.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -941,18 +789,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Vidio</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Vidio 2</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -966,7 +814,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-3.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -979,18 +827,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Vidio</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Vidio 3</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1004,7 +852,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-4.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1017,18 +865,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Vidio</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Vidio 4</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1042,7 +890,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-5.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1055,18 +903,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Vidio</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Vidio 5</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1080,37 +928,17 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/jobs/job-6.png" /></figure>
+                                            <a href="port.html">
+                                                <figure><img src="assets/imgs/jobs/job-6.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
                                         </div>
                                         <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-7 col-6">
-                                                    <a href="employers-single.html" class="card-2-img-text">
-                                                        <span class="card-grid-2-img-small"><img alt="jobhub" src="assets/imgs/jobs/logos/logo-6.svg" /></span> <span>Alithemes</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
-                                                </div>
+                                            <div class="text-center mt-15">
+                                                <h3>Other Vidio <span class="text-primary">MedTech</span>  </h3>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media pages setup for your business.</a></h5>
-                                            <div class="mt-15">
-                                                <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
-                                            </div>
-                                            <div class="card-2-bottom mt-30">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
-                                                    </div>
-                                                    <div class="col-lg-5 col-4 text-end">
-                                                        <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
-                                                        <span class="ml-5"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></span>
-                                                    </div>
-                                                </div>
+                                            <div class="text-center mt-30">
+                                                <div class="box-button-shadow"><a href="product.html" class="btn btn-default">Explore more</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -1122,7 +950,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-1.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1135,18 +963,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">UI/UX</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">ui 1</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">53 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $700<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood<></span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1160,7 +988,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-2.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1173,18 +1001,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">UI/UX</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">ui 2</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1198,7 +1026,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-3.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1211,18 +1039,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">UI/UX</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">ui 3</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1236,7 +1064,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-4.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1249,18 +1077,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">UI/UX</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">ui 4</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1274,7 +1102,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-5.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1287,18 +1115,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">UI/UX</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">ui 5</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1312,37 +1140,17 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/jobs/job-6.png" /></figure>
+                                            <a href="port.html">
+                                                <figure><img src="assets/imgs/jobs/job-6.png" alt="jobhub" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
                                         </div>
                                         <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-7 col-6">
-                                                    <a href="employers-single.html" class="card-2-img-text">
-                                                        <span class="card-grid-2-img-small"><img alt="jobhub" src="assets/imgs/jobs/logos/logo-6.svg" /></span> <span>Alithemes</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
-                                                </div>
+                                            <div class="text-center mt-15">
+                                                <h3>Other UI/UX <span class="text-primary">MedTech</span>  </h3>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media pages setup for your business.</a></h5>
-                                            <div class="mt-15">
-                                                <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
-                                            </div>
-                                            <div class="card-2-bottom mt-30">
-                                                <div class="row">
-                                                    <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
-                                                    </div>
-                                                    <div class="col-lg-5 col-4 text-end">
-                                                        <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
-                                                        <span class="ml-5"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></span>
-                                                    </div>
-                                                </div>
+                                            <div class="text-center mt-30">
+                                                <div class="box-button-shadow"><a href="product.html" class="btn btn-default">Explore more</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -1354,7 +1162,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-1.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1367,18 +1175,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">46 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $800<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1392,7 +1200,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-2.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1405,18 +1213,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">A professional Facebook cover photo banner design</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1430,7 +1238,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-3.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1443,18 +1251,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Unique and aesthetic Instagram post images</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1468,7 +1276,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-4.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1481,18 +1289,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Premium quality Instagram post and stories</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood<></span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1506,7 +1314,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-5.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1519,18 +1327,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">An amazing facebook banner, cover design</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1544,7 +1352,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-6.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1557,18 +1365,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media pages setup for your business.</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">A complete social media pages setup for your business.</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1586,7 +1394,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-1.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1599,18 +1407,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Senior Full Stack Engineer, Creator Success Full Time</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $3200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1624,7 +1432,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-2.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1637,18 +1445,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A professional Facebook cover photo banner design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">A professional Facebook cover photo banner design</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $1200<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1662,7 +1470,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-3.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1675,18 +1483,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Unique and aesthetic Instagram post images</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Unique and aesthetic Instagram post images</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $2600<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1700,7 +1508,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-4.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1713,18 +1521,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">Premium quality Instagram post and stories</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">Premium quality Instagram post and stories</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1738,7 +1546,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-5.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1751,18 +1559,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">An amazing facebook banner, cover design</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">An amazing facebook banner, cover design</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $125<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1776,7 +1584,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="card-grid-2 hover-up">
                                         <div class="text-center card-grid-2-image">
-                                            <a href="job-single.html">
+                                            <a href="port.html">
                                                 <figure><img alt="jobhub" src="assets/imgs/jobs/job-6.png" /></figure>
                                             </a>
                                             <label class="btn-urgent">Urgent</label>
@@ -1789,18 +1597,18 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-lg-5 col-6 text-end">
-                                                    <a href="#" class="btn btn-grey-small disc-btn">Fulltime</a>
+                                                    <a href="#" class="btn btn-grey-small disc-btn">Website</a>
                                                 </div>
                                             </div>
-                                            <h5 class="mt-20"><a href="job-single.html">A complete social media pages setup for your business.</a></h5>
+                                            <h5 class="mt-20"><a href="port.html">A complete social media pages setup for your business.</a></h5>
                                             <div class="mt-15">
                                                 <span class="card-time">3 mins ago</span>
-                                                <span class="card-location">Chicago</span>
+                                                <span class="card-location">Telang</span>
                                             </div>
                                             <div class="card-2-bottom mt-30">
                                                 <div class="row">
                                                     <div class="col-lg-7 col-8">
-                                                        <span class="card-text-price"> $120<span>/Month</span> </span>
+                                                        <span class="card-text-price">Website Desain Responsif FastFood </span>
                                                     </div>
                                                     <div class="col-lg-5 col-4 text-end">
                                                         <span><img alt="jobhub" src="assets/imgs/theme/icons/shield-check.svg" /></span>
@@ -1822,10 +1630,10 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <div class="content-job-inner">
-                            <h2 class="section-title heading-lg wow animate__animated animate__fadeInUp">The #1 Job Board for Graphic Design Jobs</h2>
-                            <div class="mt-40 pr-50 text-md-lh28 wow animate__animated animate__fadeInUp">Search and connect with the right candidates faster. This talent seach gives you the opportunity to find candidates who may be a perfect fit for your role</div>
+                            <h2 class="section-title heading-lg wow animate__animated animate__fadeInUp">Meet our team MedTech</h2>
+                            <div class="mt-40 pr-50 text-md-lh28 wow animate__animated animate__fadeInUp"> Find the type of work you need, clearly defined and ready to start. Work begins as soon as you purchase and provide requirements.</div>
                             <div class="mt-40">
-                                <div class="box-button-shadow wow animate__animated animate__fadeInUp"><a href="#" class="btn btn-default">Post a job now</a></div>
+                                <div class="box-button-shadow wow animate__animated animate__fadeInUp"><a href="#" class="btn btn-default">Connect Our Team</a></div>
                                 <a href="#" class="btn btn-link wow animate__animated animate__fadeInUp">Learn more</a>
                             </div>
                         </div>
@@ -1835,15 +1643,15 @@
                             <figure class=" wow animate__animated animate__fadeIn"><img alt="jobhub" src="assets/imgs/blog/img-job.png" /></figure>
                             <div class="job-top-creator">
                                 <div class="job-top-creator-head">
-                                    <h5>Top Freelancers</h5>
+                                    <h5>Team MedTech</h5>
                                 </div>
                                 <ul>
                                     <li>
                                         <div>
                                             <figure><img alt="jobhub" src="assets/imgs/avatar/ava_13.png" /></figure>
                                             <div class="job-info-creator">
-                                                <strong>Kate Adie</strong>
-                                                <span>UI/UX Designer</span>
+                                                <strong>Moh Tamim</strong>
+                                                <span>Full Stack Developer</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1851,8 +1659,8 @@
                                         <div>
                                             <figure><img alt="jobhub" src="assets/imgs/avatar/ava_14.png" /></figure>
                                             <div class="job-info-creator">
-                                                <strong>John Lennon</strong>
-                                                <span>Senior Art Director</span>
+                                                <strong>Alfi Nur</strong>
+                                                <span>UI/UX Desain</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1860,8 +1668,8 @@
                                         <div>
                                             <figure><img alt="jobhub" src="assets/imgs/avatar/ava_15.png" /></figure>
                                             <div class="job-info-creator">
-                                                <strong>Nadine Coyle</strong>
-                                                <span>Photographer</span>
+                                                <strong>Diksi</strong>
+                                                <span>Desain Graphic & Vidio</span>
                                             </div>
                                         </div>
                                     </li>
@@ -1881,245 +1689,235 @@
                 </div>
             </div>
         </section>
-        <div class="section-box">
+        <section class="section-box mt-90 mb-50">
             <div class="container">
-                <ul class="list-partners">
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay="0s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/samsung.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/google.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/facebook.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/pinterest.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".4s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avaya.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".5s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/forbes.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/avis.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".2s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/nielsen.svg" /></figure>
-                        </a>
-                    </li>
-                    <li class="wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".3s">
-                        <a href="#">
-                            <figure><img alt="jobhub" src="assets/imgs/jobs/logos/doordash.svg" /></figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <section class="section-box mt-50">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-lg-7 col-md-7">
-                        <h2 class="section-title mb-20 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">From blog</h2>
-                        <p class="text-md-lh28 color-black-5 wow animate__animated animate__fadeInUp hover-up" data-wow-delay=".1s">Latest News & Events</p>
-                    </div>
-                    <div class="col-lg-5 col-md-5 text-lg-end text-start">
-                        <a href="blog-grid.html" class="btn btn-border icon-chevron-right wow animate__animated animate__fadeInUp hover-up mt-15" data-wow-delay=".1s">View more</a>
-                    </div>
+                <div class="mw-450 text-center">
+                    <h3 class="mb-30 wow animate__animated animate__fadeInUp">Pricing Plans MedTech</h3>
                 </div>
-                <div class="row mt-70">
-                    <div class="box-swiper">
-                        <div class="swiper-container swiper-group-3">
-                            <div class="swiper-wrapper pb-70 pt-5">
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-1.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div class="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">Senior Full Stack, Creator
-                                                    Success Full Time</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div class="col-lg-3 text-end col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="mw-650 text-center wow animate__animated animate__fadeInUp">
+                    <p class="mb-35 text-md-lh24 color-black-5">When it comes to choosing the right web hosting provider, we
+                        know how easy it is to get overwhelmed with the number.</p>
+                </div>
+                <div class="text-center mt-20">
+                    <span class="text-lg text-billed">Website Development</span>
+                    <label class="switch ml-20 mr-20">
+                        <input type="checkbox" id="cb_billed_type" name="billed_type" onchange="checkBilled()" />
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="text-lg text-billed">Graphic Desain</span>
+                </div>
+                <div class="block-pricing mt-125 mt-md-50">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                            <div class="box-pricing-item">
+                                <div class="box-info-price">
+                                    <span class="text-price for-month display-month">Rp 500.000</span>
+                                    <span class="text-price for-year">Rp 200.000</span>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-2.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div class="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">21 Job Tips: How To Make a Great Impression</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div class="col-lg-3 text-end col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="for-month">
+                                    <h4 class="mb-15">Basic Dev</h4>
+                                    <p class="text-desc-package mb-30">
+                                        Untuk bisnis yang baru memulai online
+                                    </p>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-3.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div class="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">Top SQL Query Interview Questions</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div class="col-lg-3 text-end col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="for-year">
+                                    <h4 class="mb-15">Grap Basic</h4>
+                                    <p class="text-desc-package mb-30">
+                                        Cocok untuk graphic pemula
+                                    </p>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-4.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div class="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">How To Write an Interview Reschedule
-                                                    Email</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div class="col-lg-3 text-end col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card-grid-3 hover-up">
-                                        <div class="text-center card-grid-3-image">
-                                            <a href="blog-single.html">
-                                                <figure><img alt="jobhub" src="assets/imgs/blog/img-blog-5.png" /></figure>
-                                            </a>
-                                        </div>
-                                        <div class="card-block-info">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-6 text-start">
-                                                    <span>Sarah Harding</span>
-                                                </div>
-                                                <div class="col-lg-6 col-6 text-end">
-                                                    <span>06 September</span>
-                                                </div>
-                                            </div>
-                                            <h5 class="mt-15 heading-md"><a href="blog-single.html">12 Peer Interview Questions and Answers</a></h5>
-                                            <div class="card-2-bottom mt-50">
-                                                <div class="row">
-                                                    <div class="col-lg-9 col-8">
-                                                        <a href="blog-single.html" class="btn btn-border btn-brand-hover">Keep reading</a>
-                                                    </div>
-                                                    <div class="col-lg-3 text-end col-4">
-                                                        <a href="#" class="mt-10 display-block mr-20"><img alt="jobhub" src="assets/imgs/theme/icons/bookmark.svg" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <ul class="for-month list-package-feature">
+                                    <li>Desain Website Responsif</li>
+                                    <li>Optimalisasi SEO dasar</li>
+                                    <li>Hingga 5 halaman</li>
+                                    <li>Integrasi media sosial</li>
+                                    <li>Dukungan teknis selama 1 bulan</li>
+                                </ul>
+                                <ul class="for-year list-package-feature">
+                                    <li>Desain logo dasar</li>
+                                    <li>Hingga 3 konsep desain</li>
+                                    <li>2 revisi</li>
+                                    <li>File berkualitas HD</li>
+                                    <li>Dukungan teknis selama 1 bulan</li>
+                                </ul>
+                                <div>
+                                    <a href="#" class="btn btn-border">Choose plan</a>
                                 </div>
                             </div>
-                            <div class="swiper-pagination swiper-pagination3"></div>
                         </div>
+                        <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <div class="box-pricing-item">
+                                <div class="box-info-price">
+                                    <span class="text-price for-month display-month">Rp 600.000</span>
+                                    <span class="text-price for-year">Rp 400.000</span>
+                                </div>
+                                <div class="for-month">
+                                    <h4 class="mb-15">Standar Plan</h4>
+                                    <p class="text-desc-package mb-30">
+                                        For most businesses that want to otpimize web queries
+                                    </p>
+                                </div>
+                                <div class="for-year">
+                                    <h4 class="mb-15">Grap Standar</h4>
+                                    <p class="text-desc-package mb-30">
+                                        Cocok untuk graphic pemula
+                                    </p>
+                                </div>
+                                <ul class="for-month list-package-feature">
+                                    <li>Desain Website Responsif</li>
+                                    <li>Optimalisasi SEO dasar</li>
+                                    <li>Hingga 7 halaman</li>
+                                    <li>Integrasi media sosial</li>
+                                    <li>Dukungan teknis selama 1 bulan</li>
+                                </ul>
+                                <ul class="for-year list-package-feature">
+                                    <li>Desain logo dasar</li>
+                                    <li>Hingga 4 konsep desain</li>
+                                    <li>4 revisi</li>
+                                    <li>File berkualitas HD</li>
+                                    <li>Dukungan teknis selama 1 bulan</li>
+                                </ul>
+                                <div>
+                                    <a href="#" class="btn btn-border">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                            <div class="box-pricing-item most-popular">
+                                <div class="text-end mb-10">
+                                    <a href="#" class="btn btn-white-sm">Most popular</a>
+                                </div>
+                                <div class="box-info-price">
+                                    <span class="text-price for-month display-month">Rp 800.000</span>
+                                    <span class="text-price for-year">Rp 600.000</span>
+                                </div>
+                                <div class="for-month">
+                                    <h4 class="mb-15">Premiumm Plan</h4>
+                                    <p class="text-desc-package mb-30">
+                                        For most businesses that want to otpimize web queries
+                                    </p>
+                                </div>
+                                <div class="for-year">
+                                    <h4 class="mb-15">Grap Premiumm</h4>
+                                    <p class="text-desc-package mb-30">
+                                        Cocok untuk graphic pemula
+                                    </p>
+                                </div>
+                                <ul class="for-month list-package-feature">
+                                    <li>Desain Website Responsif</li>
+                                    <li>Optimalisasi SEO dasar</li>
+                                    <li>Hingga 7 halaman</li>
+                                    <li>Integrasi media sosial</li>
+                                    <li>Dukungan teknis selama 2 bulan</li>
+                                </ul>
+                                <ul class="for-year list-package-feature">
+                                    <li>Desain logo dasar</li>
+                                    <li>Hingga 3 konsep desain</li>
+                                    <li>3 revisi</li>
+                                    <li>File berkualitas HD</li>
+                                    <li>Dukungan teknis selama 2 bulan</li>
+                                </ul>
+                                <div>
+                                    <a href="#" class="btn btn-border">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                            <div class="box-pricing-item">
+                                <div class="box-info-price">
+                                    <span class="text-price for-month display-month">Rp 1.200.000</span>
+                                    <span class="text-price for-year">Rp 800.000</span>
+                                </div>
+                                <div class="for-month">
+                                    <h4 class="mb-15">Enterprise Plan</h4>
+                                    <p class="text-desc-package mb-30">
+                                        For most businesses that want to otpimize web queries
+                                    </p>
+                                </div>
+                                <div class="for-year">
+                                    <h4 class="mb-15">Grap Enterprise</h4>
+                                    <p class="text-desc-package mb-30">
+                                        Cocok untuk graphic pemula
+                                    </p>
+                                </div>
+                                <ul class="for-month list-package-feature">
+                                    <li>Desain Website Responsif</li>
+                                    <li>Optimalisasi SEO dasar</li>
+                                    <li>Hingga 9 halaman</li>
+                                    <li>Integrasi media sosial</li>
+                                    <li>Dukungan teknis selama 2 bulan</li>
+                                </ul>
+                                <ul class="for-year list-package-feature">
+                                    <li>Desain logo dasar</li>
+                                    <li>Hingga 5 konsep desain</li>
+                                    <li>3 revisi</li>
+                                    <li>File berkualitas HD</li>
+                                    <li>Dukungan teknis selama 2 bulan</li>
+                                </ul>
+                                <div>
+                                    <a href="#" class="btn btn-border">Choose plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-box bg-blue-full mt-90 mb-50">
+            <div class="container">
+                <h3 class="mb-20">Want to talk about ideas? <br>Let's get started right now.</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="text-gray-200">I'm always excited to take on new challenges and collaborate with like-minded individuals. If you have a project in mind or just want to say hello, feel free to reach out!</p>
+                    </div>
+                    <div class="col-lg-6 pl-100 pl-md-15 mt-md-50">
+                        <div class="box-button-shadow mr-20">
+                            <a href="#" class="btn btn-default">Contact us</a>
+                        </div>
+                        <a href="#" class="btn btn-border icon-chevron-right">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section-box mt-50 mb-60">
             <div class="container">
-                <div class="box-newsletter">
-                    <h5 class="text-md-newsletter">Sign up to get</h5>
-                    <h6 class="text-lg-newsletter">the latest jobs</h6>
-                    <div class="box-form-newsletter mt-30">
-                        <form class="form-newsletter">
-                            <input type="text" class="input-newsletter" value="" placeholder="contact.alithemes@gmail.com" />
-                            <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
-                        </form>
+                <div class="row">
+                    <div class="col-xl-9 col-md-12 mx-auto">
+                        <div class="contact-from-area padding-20-row-col">
+                            <h5 class="text-blue text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Send Message</h5>
+                            <h2 class="section-title mt-15 mb-10 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Contac Us MedTech Team</h2>
+                            <p class="text-muted mb-30 font-md text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">I'm always excited to take on new challenges and collaborate with like-minded individuals. If you have a project in mind or just want to say hello, feel free to reach out!*</p>
+                            <div class="row mt-50">
+                                <div class="col-md-4 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                                    <img src="assets/imgs/theme/icons/headset-color.svg" alt="">
+                                    <p class="text-muted font-xs mb-10">Phone</p>
+                                    <p class="mb-0 font-lg">
+                                        + 08127221460 <br>
+                                        + 085940499800 <br>
+                                        + 08121779822
+                                    </p>
+                                </div>
+                                <div class="col-md-4 mt-sm-30 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                    <img src="assets/imgs/theme/icons/marker-color.svg" alt="">
+                                    <p class="text-muted font-xs mb-10">Email</p>
+                                    <p class="mb-0 font-lg">
+                                        alfinurdanialin30@gmail.com <br>
+                                        mohdhoirutamim@gmail.com <br>
+                                        diksi@gmail.com
+                                    </p>
+                                </div>
+                                <div class="col-md-4 mt-sm-30 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                    <img src="assets/imgs/theme/icons/plane-color.svg" alt="">
+                                    <p class="text-muted font-xs mb-10">Address</p>
+                                    <p class="mb-0 font-lg">
+                                        Telang, Madura <br>
+                                        Jawa Timur, Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            < class="form-Website Desain Responsif      </div>
                     </div>
-                </div>
-                <div class="box-newsletter-bottom">
-                    <div class="newsletter-bottom"></div>
                 </div>
             </div>
         </section>
@@ -2128,52 +1926,10 @@
     <!-- Footer -->
     <footer class="footer mt-50">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <a href="index.html"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
-                    <div class="mt-20 mb-20">Jobhub is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
-                </div>
-                <div class="col-md-2 col-xs-6">
-                    <h6>Company</h6>
-                    <ul class="menu-footer mt-40">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-xs-6">
-                    <h6>Product</h6>
-                    <ul class="menu-footer mt-40">
-                        <li><a href="#">Feature</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Credit</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-xs-6">
-                    <h6>Download</h6>
-                    <ul class="menu-footer mt-40">
-                        <li><a href="#">iOS</a></li>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Microsoft</a></li>
-                        <li><a href="#">Desktop</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-xs-6">
-                    <h6>Support</h6>
-                    <ul class="menu-footer mt-40">
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="footer-bottom mt-50">
                 <div class="row">
                     <div class="col-md-6">
-                        Copyright ©2021 <a href="#"><strong>Jobhub</strong></a>. All Rights Reserved
+                        Copyright ©2021 <a href="#"><strong>MedTechnology</strong></a>. All Rights Reserved
                     </div>
                     <div class="col-md-6 text-md-end text-start">
                         <div class="footer-social">
@@ -2203,6 +1959,17 @@
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
     <!-- Template  JS -->
     <script src="assets/js/main.js?v=1.0"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var options = {
+                strings: ["Website", "Graphic Desain", "Vidio Graphic", "Mobile Apps"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            };
+            var typed = new Typed("#typed", options);
+        });
+    </script>
 </body>
 
 </html>
